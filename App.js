@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AppRegistry } from "react-native";
+import { AppRegistry, Dimensions } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import Main from "./screens/Main";
@@ -12,6 +12,8 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   const [hideSplashScreen, setHideSplashScreen] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(true);
+  const [height, setHeight] = useState('');
+  const [width, setWidth] = useState('');
   const [fontsLoaded] = useFonts({
     "NotoSans-Light": require("./assets/fonts/NotoSans-Light.ttf"),
     "NotoSans-Regular": require("./assets/fonts/NotoSans-Regular.ttf"),
@@ -20,7 +22,17 @@ const App = () => {
     "NotoSans-Bold": require("./assets/fonts/NotoSans-Bold.ttf"),
     "NotoSans-ExtraBold": require("./assets/fonts/NotoSans-ExtraBold.ttf"),
     "NunitoSans12pt-ExtraBold": require("./assets/fonts/NunitoSans12pt-ExtraBold.ttf"),
+    "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
+    "Roboto-Medium": require("./assets/fonts/Roboto-Medium.ttf"),
+  
   });
+
+  useEffect(() => {
+    //handler to get device Height
+    setHeight(Dimensions.get('window').height);
+    //handler to get device Width
+    setWidth(Dimensions.get('window').width);
+  }, []);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -35,20 +47,6 @@ const App = () => {
     if (onboardingShownPreviously) {
       setShowOnboarding(false);
     }
-  }, []);
-
-  useEffect(() => {
-    const RankData = async () => {
-      try {
-        const data = [
-        ];
-        return data;
-      } catch (error) {
-        console.error("Error fetching RankData:", error);
-      }
-    };
-
-    RankData();
   }, []);
 
   if (!fontsLoaded) {

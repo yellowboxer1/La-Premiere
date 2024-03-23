@@ -31,6 +31,9 @@
         "projectId": "a953e14a-6fe9-4a77-9546-5c2ce4e9d11c"
       }
     },
-    "owner": "gunho1212"
+    "owner": "gunho1212",
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
