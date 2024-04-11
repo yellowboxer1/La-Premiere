@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleProp, ViewStyle, StyleSheet, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Color } from "../GlobalStyles";
 
 const RectangleComponent = ({ style }) => {

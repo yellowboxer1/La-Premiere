@@ -10,13 +10,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
+import asyncio
 import uvicorn
 from functools import lru_cache
 
 app = FastAPI()
 
 # Path to your Chrome webdriver executable
-webdriver_path = "C:/Program Files/Google/Chrome/chromedriver.exe"
+webdriver_path = "/google/chromedriver"
 
 class MatchInfo(BaseModel):
     match_time: str
@@ -27,58 +28,68 @@ class MatchInfo(BaseModel):
     status: str
     link: str
 
-@lru_cache(maxsize=None)
-def fetch_match_info(date: str):
+def fetch_match_info_uncached(date: str):
+    # 현재 한국 시간 구하기
+    korea_time = datetime.utcnow() + timedelta(hours=9)
+    today_date = korea_time.strftime("%Y-%m-%d")
+
+    # 현재 날짜가 오늘인 경우에만 캐시 초기화
+    if date == today_date and korea_time.hour == 2:
+        fetch_match_info.cache_clear()
+
     try:
         # URL of the webpage you want to scrape
         url = "https://m.sports.naver.com/wfootball/schedule/index?date={}".format(date)
-        
+
         # Initialize Chrome webdriver with service
         service = Service(webdriver_path)
         service.start()
-        
+
         # Headless mode for Chrome options
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")  # Enable headless mode
-        
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--no-sandbox")
+
         # Initialize Chrome WebDriver with options
         driver = webdriver.Chrome(service=service, options=chrome_options)
-        
+
         # Open the webpage
         driver.get(url)
-        
+
         # Wait for the page to load
         wait = WebDriverWait(driver, 10)
         wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ScheduleAllType_match_list_group__1nFDy")))
-        
+
         # Get the page source after waiting for the dynamic content to load
         page_source = driver.page_source
-        
+
         # Use BeautifulSoup to parse the HTML content
         soup = BeautifulSoup(page_source, 'html.parser')
-        
+
         # Find the match item only if league_info is "프리미어리그"
         league_info = soup.find("em", class_="ScheduleAllType_title___Qfd4").text.strip()
         if league_info == "프리미어리그":
             match_list_group = soup.find("div", class_="ScheduleAllType_match_list_group__1nFDy")
             if match_list_group:
                 match_items = match_list_group.find_all("li", class_="MatchBox_match_item__3_D0Q")
-                
+
                 # Extract information for each match item
                 matches = []
+                match_id = 1
                 for match in match_items:
                     match_info = {}
                     # Extract match time
                     match_info["match_time"] = match.find("div", class_="MatchBox_time__nIEfd").text.strip()[5:]
-        
+
                     # Extract home team and away team names
                     teams = match.find_all("strong", class_="MatchBoxTeamArea_team__3aB4O")
                     match_info["home_team"] = teams[0].text.strip()
                     match_info["away_team"] = teams[1].text.strip()
-        
+
                     # Extract home score and away score
                     scores = match.find_all("strong", class_="MatchBoxTeamArea_score__1_YFB")
-        
+
                     # Check if scores are available
                     if scores:
                         match_info["home_score"] = scores[0].text.strip()
@@ -86,30 +97,35 @@ def fetch_match_info(date: str):
                     else:
                         match_info["home_score"] = "N/A"
                         match_info["away_score"] = "N/A"
-        
+
                     # Extract match status
                     match_info["status"] = match.find("em", class_="MatchBox_status__2pbzi").text.strip()
-                    
+
                     # Extract match link
                     link = match.find("a", class_="MatchBox_link_match_end__3HGjy")
                     match_info["link"] = link["href"] if link and link.has_attr("href") else "none" if link is not None else None
 
+                    match_info["match_id"] = match_id
+                    match_id += 1
                     # Add match info to matches list
+    
                     matches.append(match_info)
-                
+
                 return {"date": date, "league": "프리미어리그", "matches": matches}
             else:
                 return {"message": "예정된 경기가 없습니다."}
         else:
             return {"message": "예정된 경기가 없습니다."}
-            
+
     except TimeoutException:
-        return {"error": "Timeout occurred while waiting for the element to load"}
-        
+        return {"message": "예정된 경기가 없습니다."}
+
     finally:
         # Close the webdriver
         if 'driver' in locals():
             driver.quit()
+
+fetch_match_info = lru_cache(maxsize=None)(fetch_match_info_uncached)
 
 # Define a new APIRouter instance
 match_info_router = APIRouter()
@@ -127,10 +143,12 @@ while current_date < end_date:
             return match_info_response
         else:
             raise HTTPException(status_code=404, detail="No scheduled matches found.")
-    
+
     app.include_router(match_info_router, prefix="/match_info")
-    
+
     current_date += timedelta(days=1)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    loop = asyncio.get_event_loop()
+    loop.create_task(uvicorn.run(app, host="0.0.0.0", port=8000))
+    loop.run_forever()

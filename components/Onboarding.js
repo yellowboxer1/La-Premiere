@@ -1,16 +1,36 @@
 import * as React from "react";
-import { Text, StyleSheet, TextInput, View, Pressable, ScrollView } from "react-native";
 import { Image } from "expo-image";
+import { Text, StyleSheet, TextInput, View, Pressable, ScrollView } from "react-native";
+import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from "@react-navigation/native";
 import { height, width, Color, FontSize, FontFamily } from "../GlobalStyles";
-import { useState } from 'react';
+
+Text.defaultProps = Text.defaultProps || {};
+Text.defaultProps.allowFontScaling = false;
 
 const Onboarding = () => {
   const navigation = useNavigation();
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [teamSelected, setTeamSelected] = useState(false);
   const [searchText, setSearchText] = useState('');
+
+  useEffect(() => {
+    // Check if the selected team is already saved in AsyncStorage
+    const checkSelectedTeam = async () => {
+      try {
+        const team = await AsyncStorage.getItem('selectedTeam');
+        if (team) {
+          // If team is found, directly navigate to the main screen
+          navigation.replace('Main');
+        }
+      } catch (error) {
+        console.error("Error checking selected team in AsyncStorage:", error);
+      }
+    };
+
+    checkSelectedTeam();
+  }, []);
 
   const handleTeamSelection = async (team) => {
     if (!teamSelected) {
@@ -57,7 +77,7 @@ const Onboarding = () => {
             secureTextEntry={false}
           />
         <TextInput 
-            style={[styles.textinput, styles.searchTextInput]}
+            style={[styles.textinput]}
                     placeholder="검색"
                     placeholderTextColor="#CCCCCC"
                     value={searchText}
@@ -91,7 +111,7 @@ const Onboarding = () => {
         <View style={[styles.frameItem, styles.frameShadowBox]} />
         <Pressable
           style={[styles.tor1, styles.tor1Layout]}
-          onPress={() => handleTeamSelection("토트넘 훗스퍼")}          
+          onPress={() => handleTeamSelection("토트넘 홋스퍼")}          
         >
           <Image
             style={styles.icon}
@@ -289,7 +309,7 @@ const Onboarding = () => {
             source={require("../assets/lut1.png")}
           />
         </Pressable>
-        <Text style={[styles.text1, styles.textFlexBox1]}>토트넘 훗스퍼</Text>
+        <Text style={[styles.text1, styles.textFlexBox1]}>토트넘 홋스퍼</Text>
         <Text style={[styles.text2, styles.textTypo2]}>맨체스터{"\n"}유나이티드</Text>
         <Text style={[styles.fc, styles.textFlexBox1]}>맨체스터 시티</Text>
         <Text style={styles.fc1}>첼시 FC</Text>
@@ -298,7 +318,7 @@ const Onboarding = () => {
         <Text style={[styles.text3, styles.textLayout2]}>애스턴 빌라</Text>
         <Text style={[styles.text4, styles.textTypo]}>웨스트 햄</Text>
         <Text style={[styles.text5, styles.textLayout2]}>뉴캐슬</Text>
-        <Text style={[styles.text6, styles.textLayout1]}>브라이튼</Text>
+        <Text style={[styles.text6, styles.textLayout1]}>브라이턴</Text>
         <Text style={[styles.text7, styles.textFlexBox1]}>울브스</Text>
         <Text style={[styles.text8, styles.textLayout]}>풀럼</Text>
         <Text style={[styles.text9, styles.afcFlexBox]}>에버턴</Text>
@@ -337,38 +357,38 @@ const styles = StyleSheet.create({
     width: width * 375,
   },
   tor1Layout: {
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   che1Position: {
     top: height * 177,
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   avl1Position: {
     top: height * 332,
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   bha1Position: {
     top: height * 487,
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   eve1Position: {
     top: height * 642,
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   bre1Position: {
     top: height * 797,
-    height: height * 96,
-    width: width * 96,
+    height: height * 98,
+    width: width * 98,
     position: "absolute",
   },
   textFlexBox1: {
@@ -491,10 +511,11 @@ const styles = StyleSheet.create({
   },
   textinput: {
     left: width * 52,
-    fontSize: width * 18,
+    fontSize: FontSize.size_lg,
     fontFamily: FontFamily.notoSansRegular,
     color: Color.colorWhite,    
-    top: height * 15,
+    top: height * 8,
+    bottom: height * 8,
     position: "absolute",
     paddingHorizontal: height * 10, // Padding for the input box
     paddingLeft: 0, // Padding for the placeholder text
@@ -515,8 +536,8 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   frameItem: {
-    top: 0,
-    height: height * 1099,
+    top: height * -1,
+    height: height * 1100,
     borderTopWidth: width * 1,
     borderColor: Color.colorGainsboro,
     shadowOpacity: width * 1,
@@ -530,19 +551,19 @@ const styles = StyleSheet.create({
     backgroundColor: Color.colorDarkslategray,
   },
   icon: {
-    height: "100%",
-    width: "100%",
+    height: height * 96,
+    width: width * 96,
   },
   tor1: {
     top: height * 22,
-    height: height * 96,
+    height: height * 97,
     width: width * 96,
     left: width * 16,
   },
   mau1: {
     left: width * 138,
     top: height * 22,
-    height: height * 96,
+    height: height * 97,
     width: width * 96,
   },
   mci1: {
@@ -635,7 +656,7 @@ const styles = StyleSheet.create({
     left: width * 16,
     width: width * 100,
     top: height * 280,
-    height: width * 30,
+    height: height * 30,
     justifyContent: "center",
     alignItems: "flex-end",
     display: "flex",
@@ -757,4 +778,4 @@ const styles = StyleSheet.create({
 
 export default Onboarding;
 
-const TEAMS = ["토트넘 훗스퍼", "맨체스터 유나이티드", "맨체스터 시티", "첼시 FC", "리버풀 FC", "아스널 FC", "애스턴 빌라", "웨스트 햄", "뉴캐슬", "브라이튼", "울브스", "풀럼", "에버턴", "크리스탈 팰리스", "AFC 본머스", "브랜트퍼드", "노팅엄 포레스트", "번리", "셰필드", "루턴타운"];
+const TEAMS = ["토트넘 홋스퍼", "맨체스터 유나이티드", "맨체스터 시티", "첼시 FC", "리버풀 FC", "아스널 FC", "애스턴 빌라", "웨스트 햄", "뉴캐슬", "브라이턴", "울브스", "풀럼", "에버턴", "크리스탈 팰리스", "AFC 본머스", "브랜트퍼드", "노팅엄 포레스트", "번리", "셰필드", "루턴타운"];

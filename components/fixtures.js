@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Image } from "expo-image";
 import { ProgressBar } from "react-native-paper";
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import cheerio from 'cheerio';
 import { styles } from '../style/fixtureStyle'; 
 import { getWinRate } from '../DB/asset'; 
+import { useNavigation } from "@react-navigation/native";
 
 const MatchInformation = ({ startDate }) => {
   const [favoriteTeam, setFavoriteTeam] = useState(null);
@@ -20,6 +20,12 @@ const MatchInformation = ({ startDate }) => {
   const [AwayTeamResult, setAwayTeamResult] = useState(null);
   const [homeOverallWinRate, setHomeOverallWinRate] = useState(null);
   const [awayOverallWinRate, setAwayOverallWinRate] = useState(null);
+
+  const navigation = useNavigation();
+
+  const dday = () => {
+      navigation.navigate('Dday');
+  };
 
 
   const isToday = (date) => {
@@ -94,17 +100,17 @@ const MatchInformation = ({ startDate }) => {
         "리버풀 FC": "10",
         "맨체스터 시티": "11",
         "애스턴 빌라": "2",
-        "토트넘 훗스퍼": "21",
+        "토트넘 홋스퍼": "21",
         "맨체스터 유나이티드": "12",
         "웨스트 햄": "25",
-        "브라이튼": "131",
+        "브라이턴": "131",
         "울브스": "38",
         "뉴캐슬": "23",
         "첼시 FC": "4",
         "풀럼": "34",
         "AFC 본머스": "127",
         "크리스탈 팰리스": "6",
-        "브렌트퍼드": "130",
+        "브랜트퍼드": "130",
         "에버턴": "7",
         "노팅엄 포레스트": "15",
         "루턴타운": "163",
@@ -137,7 +143,6 @@ const MatchInformation = ({ startDate }) => {
       }
     
       const startDateString = nextMatch.startDate;
-
       // Splitting the date string into its components
       const [dateString, timeString] = startDateString.split(', ');
       const [month, day, year] = dateString.split('/');
@@ -148,12 +153,16 @@ const MatchInformation = ({ startDate }) => {
       const minutes = parseInt(time.split(':')[1]);
 
       // Adjusting hours for PM times
-      if (meridiem === 'PM' && hours !== 12) {
+      if (meridiem === 'PM' && hours < 12) {
         hours += 12;
+    }
+    if (meridiem === 'AM' && hours === 12) {
+      hours = 0; // Midnight
     }
 
     // Constructing the Date object
     const startDate = new Date(year, month - 1, day, hours, minutes);
+
     setHomeTeamResult(data1.recentFormGuide.home_team);
     setAwayTeamResult(data1.recentFormGuide.away_team);
 
@@ -179,6 +188,7 @@ const MatchInformation = ({ startDate }) => {
       setMinutesDiff(minDiff < 10 ? `0${minDiff}` : minDiff.toString());
       setSecondDiff(secDiff < 10 ? `0${secDiff}` : secDiff.toString());
     };
+
     // Update the timer initially
     updateTimer();
 
@@ -449,9 +459,9 @@ return (
       </View>
       <View style={[styles.frameView, styles.parentPosition]}>
       <Text style={styles.text18}>{daysDiff}</Text>
-        <Text style={[styles.text19, styles.textTypo]}>{hourDiff}</Text>
-        <Text style={[styles.text20, styles.textTypo]}>{minutesDiff}</Text>
-        <Text style={[styles.text21, styles.textTypo]}>{secondDiff}</Text>
+        <Text style={[styles.text19]}>{hourDiff}</Text>
+        <Text style={[styles.text20]}>{minutesDiff}</Text>
+        <Text style={[styles.text21]}>{secondDiff}</Text>
       </View>
       <View style={[styles.parent8, styles.parentPosition]}>
         <Text style={[styles.text22, styles.textTypo1]}>:</Text>
@@ -459,6 +469,9 @@ return (
         <Text style={[styles.text23, styles.textTypo1]}>:</Text>
       </View>
       <View style={styles.frameChild1} />
+      <TouchableOpacity onPress={dday}>
+      <View style={styles.image505Icon}>
+      </View></TouchableOpacity>
       <Text style={[styles.vs, styles.textClr]}>VS</Text>
       <View style={[styles.wrapper, styles.frameLayout]}>
         <ProgressBar
@@ -471,7 +484,7 @@ return (
         <ProgressBar
           style={[styles.progressbar1, styles.frameLayout]}
           progress={homeOverallWinRate ? homeOverallWinRate : 0}
-          color="#6750a4"
+          color="#0093FF"
         />
       </View>
     </View>

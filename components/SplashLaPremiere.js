@@ -1,5 +1,5 @@
-import { Text, StyleSheet, View, Dimensions } from 'react-native';
-import { Image } from 'expo-image';
+import { Text, StyleSheet } from 'react-native';
+import { Image } from "expo-image";
 import { LinearGradient } from 'expo-linear-gradient';
 import { height,width, Color, FontSize, FontFamily } from '../GlobalStyles';
 
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     top: '20%',
     textAlign: 'center',
     fontSize: width * 50,
-    letterSpacing: width *  -1,
+    letterSpacing: width *  0,
     color: Color.colorWhite,
     lineHeight: height * 65,
     fontFamily: FontFamily.notoSansBold,

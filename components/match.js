@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View, Text, Pressable, Image, ActivityIndicator, FlatList } from "react-native";
+import { Image } from "expo-image";
+import { View, Text, Pressable, ActivityIndicator, FlatList, TouchableOpacity  } from "react-native";
 import { Switch } from "react-native-paper";
-import { styles } from '../style/MatchInfoStyles'; // Import styles from MatchInfoStyles.js
+import { styles } from '../style/MatchStyles'; // Import styles from MatchInfoStyles.js
+import { useNavigation } from "@react-navigation/native";
 
-// Fetch match info function
-const fetchMatchInfo = async (date) => {
-  try {
-    const response = await fetch(`http://118.67.143.125:8000/match_info/${date}`);
-    const matchResults = await response.json();
-    return matchResults;
-  } catch (error) {
-    throw new Error(`Error fetching match info: ${error.message}`);
-  }
-};
 
 const formatDate = (date) => {
   const dayNames = ["일", "월", "화", "수", "목", "금", "토"];
@@ -34,7 +26,12 @@ const MatchInfo = () => {
   const [matchInfo, setMatchInfo] = useState(null);
   const [component8Value, setComponent8Value] = useState(false);
   const [loading, setLoading] = useState(true); // Loading state
+  const navigation = useNavigation();
 
+  const MatchInfo1 = () => {
+      navigation.navigate('MatchInfo1');
+  };
+  
   const handlePress1 = () => {
     const newDate = new Date(DisplayedDate);
     newDate.setDate(newDate.getDate() - 1);
@@ -59,7 +56,7 @@ const MatchInfo = () => {
   const clubLogos = {
     "아스널": require("../assets/ARS.png"),
     "리버풀": require("../assets/LIV.png"),
-    "애스턴 빌라": require("../assets/AVL.png"),
+    "애스턴빌라": require("../assets/AVL.png"),
     "맨시티": require("../assets/MCI.png"),
     "토트넘": require("../assets/TOT.png"),
     "맨유": require("../assets/MUN.png"),
@@ -92,41 +89,47 @@ const MatchInfo = () => {
   
 
   const clubMappings = {
-    "아스널": "ARS",
-    "리버풀": "LIV",
-    "맨시티": "MCI",
-    "애스턴빌라": "AVL",
-    "토트넘": "TOT",
-    "맨유": "MUN",
-    "웨스트햄": "WHU",
-    "브라이턴": "BHA",
-    "울버햄튼": "WOL",
-    "뉴캐슬": "NEW",
-    "첼시": "CHE",
-    "풀럼": "FUL",
-    "본머스": "BOU",
-    "팰리스": "CRY",
-    "브렌트퍼드": "BRE",
-    "에버턴": "EVE",
-    "노팅엄": "NFO",
-    "루턴": "LUT",
-    "번리": "BUR",
-    "셰필드": "SHU",
+    "아스널": "아스널",
+    "리버풀": "리버풀",
+    "맨시티": "맨시티",
+    "애스턴빌라": "빌라",
+    "토트넘": "토트넘",
+    "맨유": "맨유",
+    "웨스트햄": "웨스트햄",
+    "브라이턴": "브라이턴",
+    "울버햄튼": "울브스",
+    "뉴캐슬": "뉴캐슬",
+    "첼시": "첼시",
+    "풀럼": "풀럼",
+    "본머스": "본머스",
+    "팰리스": "팰리스",
+    "브렌트퍼드": "브랜트퍼드",
+    "에버턴": "에버턴",
+    "노팅엄": "노팅엄",
+    "루턴": "루턴",
+    "번리": "번리",
+    "셰필드": "셰필드",
 };
 
   // Add console log to verify data
   useEffect(() => {
     setLoading(true);
-    fetchMatchInfo(formatDateForURL(DisplayedDate))
-      .then((data) => {
-        console.log("Fetched data:", data);
-        setMatchInfo(data);
+    const date = formatDateForURL(DisplayedDate);
+    fetch(`http://118.67.143.125:8000/match_info/${date}`)
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+      })
+      .then(result => {
+        setMatchInfo(result);
         setLoading(false);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-        setLoading(false);
-      });
+        .catch(error => {
+          console.error('Error:', error);
+          setMatchInfo({});
+          setLoading(false);
+        });
   }, [DisplayedDate]);
 
   return (
@@ -147,7 +150,10 @@ const MatchInfo = () => {
       const home_team1 = clubMappings[item.home_team];
 
       return (
-        <View key={item.match_id}>
+        <TouchableOpacity
+        key={item.match_id}
+        onPress={MatchInfo1} // MatchInfo1 스크린으로 이동하는 함수 호출
+      >
           {index === 0 || matchInfo.matches[index - 1].match_id !== item.match_id ? (
             <View style={[styles.rec1, { zIndex: -1 }]}>
               <Text style={styles.headerText}>{item.match_id}</Text>
@@ -185,7 +191,7 @@ const MatchInfo = () => {
               <Text style={styles.text5}>{item.match_time}</Text>
             </>
           )}
-        </View>
+            </TouchableOpacity>
       );
     }}
   />
@@ -198,13 +204,13 @@ const MatchInfo = () => {
         </Text>
       </View>
     )}
-
       <View style={[styles.groupItem, styles.mainItemBg]} />
       <View style={[styles.groupInner, styles.mainItemBg]} />
       <View style={[styles.mainChild, styles.mainChildBg]} />
+      <TouchableOpacity style={[styles.navi1, styles.naviBg]} onPress={MatchInfo1}>
+    </TouchableOpacity>
       <Text style={[styles.text, styles.textPosition1]}>경기 일정</Text>
       <Text style={[styles.text1, styles.textLayout2]}>스포일러 방지</Text>
-
       <Pressable style={[styles.rectangleGroup, styles.rectangleLayout]} onPress={handlePress1}>
         <View style={[styles.instanceChild, styles.childLayout]} />
         <Image
@@ -212,7 +218,6 @@ const MatchInfo = () => {
           source={require("../assets/vector-26831.png")}
         />
       </Pressable>
-
       <Pressable style={[styles.rectangleContainer, styles.rectangleLayout]} onPress={handlePress2}>
         <View style={[styles.instanceChild, styles.childLayout]} />
         <Image
@@ -226,7 +231,6 @@ const MatchInfo = () => {
           <Text style={[styles.text4, styles.text4Layout]}>오늘</Text>
         </View>
       )}
-
       <Image
         style={[styles.vectorIcon, styles.mainChildLayout1]}
         source={require("../assets/vector-2682.png")}

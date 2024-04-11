@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "LPL",
+    "name": "LaPremiere",
     "slug": "lpl",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,19 +9,29 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "permissions": ["NOTIFICATIONS"]
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "networking": {
+      "whitelist":
+      "http://118.67.143.125:8000/**"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "INTERNET"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gunho1212.lpl",
+      "usesCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,7 +43,9 @@
     },
     "owner": "gunho1212",
     "plugins": [
-      "expo-font"
+      "expo-build-properties",
+      "expo-font",
+      "expo-build-properties"
     ]
   }
 }

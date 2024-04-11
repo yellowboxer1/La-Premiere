@@ -1,0 +1,1262 @@
+[
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "휴고 요리스",
+    "Value": 361
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "해리 케인",
+    "Value": 317
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "대런 앤더튼",
+    "Value": 299
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "해리 케인",
+    "Value": 213
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "손흥민",
+    "Value": 117
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "테디 셰링엄",
+    "Value": 97
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "대런 앤더튼",
+    "Value": 67
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "크리스티안 에릭센",
+    "Value": 62
+  },
+  {
+    "Team": "토트넘 홋스퍼",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "손흥민",
+    "Value": 60
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "조엘 워드",
+    "Value": 298
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "윌프리드 자하",
+    "Value": 291
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "제임스 맥아더",
+    "Value": 240
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "윌프리드 자하",
+    "Value": 68
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "크리스티안 벤테케",
+    "Value": 35
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "루카 밀리보예비치",
+    "Value": 28
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "윌프리드 자하",
+    "Value": 28
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "안드로스 타운센드",
+    "Value": 21
+  },
+  {
+    "Team": "크리스탈 팰리스",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "제임스 맥아더",
+    "Value": 20
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "제이미 캐러거",
+    "Value": 508
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "스티븐 제라드",
+    "Value": 504
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "조던 헨더슨",
+    "Value": 360
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "모하메드 살라",
+    "Value": 152
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "로비 파울러",
+    "Value": 128
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "스티븐 제라드",
+    "Value": 120
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "스티븐 제라드",
+    "Value": 92
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "모하메드 살라",
+    "Value": 67
+  },
+  {
+    "Team": "리버풀 FC",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "알렉산더 아놀드",
+    "Value": 58
+  },
+  {
+    "Team": "번리",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "벤 미",
+    "Value": 217
+  },
+  {
+    "Team": "번리",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "애슐리 반스",
+    "Value": 200
+  },
+  {
+    "Team": "번리",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "제임스 타코우스키",
+    "Value": 194
+  },
+  {
+    "Team": "번리",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "크리스 우드",
+    "Value": 49
+  },
+  {
+    "Team": "번리",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "애슐리 반스",
+    "Value": 42
+  },
+  {
+    "Team": "번리",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "샘 보크스",
+    "Value": 17
+  },
+  {
+    "Team": "번리",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "요한 구드문드손",
+    "Value": 20
+  },
+  {
+    "Team": "번리",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "애슐리 웨스트우드",
+    "Value": 20
+  },
+  {
+    "Team": "번리",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "드와이트 맥닐",
+    "Value": 17
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "라이언 긱스",
+    "Value": 632
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "폴 스콜스",
+    "Value": 499
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "다비드 데 헤아",
+    "Value": 415
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "웨인 루니",
+    "Value": 183
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "라이언 긱스",
+    "Value": 109
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "폴 스콜스",
+    "Value": 107
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "라이언 긱스",
+    "Value": 162
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "웨인 루니",
+    "Value": 93
+  },
+  {
+    "Team": "맨체스터 유나이티드",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "데이비드 베컴",
+    "Value": 80
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "가레스 배리",
+    "Value": 365
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "아그본라허",
+    "Value": 322
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "앨런 라이트",
+    "Value": 260
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "아그본라허",
+    "Value": 74
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "드와이트 요크",
+    "Value": 60
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "올리 왓킨스",
+    "Value": 56
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "애슐리 영",
+    "Value": 42
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "가레스 배리",
+    "Value": 41
+  },
+  {
+    "Team": "애스턴 빌라",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "아그본라허",
+    "Value": 34
+  },
+  {
+    "Team": "울브스",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "후벵 네베스",
+    "Value": 177
+  },
+  {
+    "Team": "울브스",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "주앙 무티뉴",
+    "Value": 175
+  },
+  {
+    "Team": "울브스",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "아다마 트라오레",
+    "Value": 157
+  },
+  {
+    "Team": "울브스",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "라울 히메네스",
+    "Value": 40
+  },
+  {
+    "Team": "울브스",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "스티븐 플레처",
+    "Value": 22
+  },
+  {
+    "Team": "울브스",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "후벵 네베스",
+    "Value": 21
+  },
+  {
+    "Team": "울브스",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "페드로 네투",
+    "Value": 19
+  },
+  {
+    "Team": "울브스",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "라울 히메네스",
+    "Value": 18
+  },
+  {
+    "Team": "울브스",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "주앙 무티뉴",
+    "Value": 18
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "다비드 실바",
+    "Value": 309
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "세르히오 아구에로",
+    "Value": 275
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "조 하트",
+    "Value": 266
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "세르히오 아구에로",
+    "Value": 184
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "라힘 스털링",
+    "Value": 91
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "케빈 데 브라위너",
+    "Value": 65
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "케빈 데 브라위너",
+    "Value": 106
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "다비드 실바",
+    "Value": 93
+  },
+  {
+    "Team": "맨체스터 시티",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "세르히오 아구에로",
+    "Value": 47
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "레이 팔러",
+    "Value": 333
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "데이비드 시먼",
+    "Value": 325
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "데니스 베르캄프",
+    "Value": 315
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "티에리 앙리",
+    "Value": 175
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "이안 라이트",
+    "Value": 104
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "로빈 판 페르시",
+    "Value": 96
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "데니스 베르캄프",
+    "Value": 94
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "티에리 앙리",
+    "Value": 74
+  },
+  {
+    "Team": "아스널 FC",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "세스크 파브레가스",
+    "Value": 70
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "시무스 콜먼",
+    "Value": 357
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "팀 하워드",
+    "Value": 354
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "레온 오스만",
+    "Value": 352
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "로멜루 루카쿠",
+    "Value": 68
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "던컨 퍼거슨",
+    "Value": 60
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "팀 케이힐",
+    "Value": 56
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "레이튼 베인스",
+    "Value": 53
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "미켈 아르테타",
+    "Value": 36
+  },
+  {
+    "Team": "에버턴",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "스티븐 피에나르",
+    "Value": 31
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "아담 스미스",
+    "Value": 199
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "스티브 쿡",
+    "Value": 168
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "조슈아 킹",
+    "Value": 161
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "조슈아 킹",
+    "Value": 48
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "칼럼 윌슨",
+    "Value": 41
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "도미닉 솔란케",
+    "Value": 24
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "라이언 프레이저",
+    "Value": 26
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "조슈아 킹",
+    "Value": 14
+  },
+  {
+    "Team": "AFC 본머스",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "아담 스미스",
+    "Value": 13
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "루이스 덩크",
+    "Value": 232
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "파스칼 그로스",
+    "Value": 218
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "솔리 마치",
+    "Value": 182
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "파스칼 그로스",
+    "Value": 30
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "닐 무페이",
+    "Value": 26
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "글렌 머레이",
+    "Value": 26
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "파스칼 그로스",
+    "Value": 45
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "솔리 마치",
+    "Value": 18
+  },
+  {
+    "Team": "브라이턴",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "레안드로 트로사르",
+    "Value": 13
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "토마스 카민스키",
+    "Value": 29
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "칼튼 모리스",
+    "Value": 29
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "알피 다우티",
+    "Value": 28
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "엘리야 아데바요",
+    "Value": 9
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "칼튼 모리스",
+    "Value": 8
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "로스 바클리",
+    "Value": 4
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "알피 다우티",
+    "Value": 7
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "칼튼 모리스",
+    "Value": 4
+  },
+  {
+    "Team": "루턴타운",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "로스 바클리",
+    "Value": 3
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "마크 노블",
+    "Value": 414
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "아론 크레스웰",
+    "Value": 289
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "미카일 안토니오",
+    "Value": 245
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "미카일 안토니오",
+    "Value": 64
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "파올로 디 카니오",
+    "Value": 47
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "마크 노블",
+    "Value": 47
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "마크 노블",
+    "Value": 35
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "미카일 안토니오",
+    "Value": 32
+  },
+  {
+    "Team": "웨스트 햄",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "파올로 디 카니오",
+    "Value": 31
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "셰이 기븐",
+    "Value": 354
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "앨런 시어러",
+    "Value": 303
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "숄라 아메오비",
+    "Value": 294
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "앨런 시어러",
+    "Value": 148
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "피터 비어즐리",
+    "Value": 46
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "칼럼 윌슨",
+    "Value": 45
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "놀베르토 솔라노",
+    "Value": 54
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "앨런 시어러",
+    "Value": 36
+  },
+  {
+    "Team": "뉴캐슬",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "로버트 리",
+    "Value": 31
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "존 테리",
+    "Value": 492
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "프랭크 램파드",
+    "Value": 429
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "아스필리쿠에타",
+    "Value": 349
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "프랭크 램파드",
+    "Value": 147
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "디디에 드로그바",
+    "Value": 104
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "에당 아자르",
+    "Value": 85
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "프랭크 램파드",
+    "Value": 90
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "디디에 드로그바",
+    "Value": 55
+  },
+  {
+    "Team": "첼시 FC",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "에당 아자르",
+    "Value": 54
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "비탈리 자넬트",
+    "Value": 95
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "요안 위사",
+    "Value": 93
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "마티아스 옌센",
+    "Value": 92
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "이반 토니",
+    "Value": 36
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "요안 위사",
+    "Value": 21
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "브라이언 음뵈모",
+    "Value": 20
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "브라이언 음뵈모",
+    "Value": 18
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "마티아스 옌센",
+    "Value": 10
+  },
+  {
+    "Team": "브랜트퍼드",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "이반 토니",
+    "Value": 9
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "브레데 한겔란트",
+    "Value": 217
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "아론 휴즈",
+    "Value": 196
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "클린트 뎀프시",
+    "Value": 189
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "클린트 뎀프시",
+    "Value": 50
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "스티드 말브랑크",
+    "Value": 32
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "브라이언 맥브라이드",
+    "Value": 32
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "스티드 말브랑크",
+    "Value": 33
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "루이스 보아 모르테",
+    "Value": 25
+  },
+  {
+    "Team": "풀럼",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "사이먼 데이비스",
+    "Value": 21
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "올리버 노우드",
+    "Value": 94
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "조지 발독",
+    "Value": 83
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "크리스 바샴",
+    "Value": 77
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "브라이언 딘",
+    "Value": 15
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "아드리안 리틀존",
+    "Value": 11
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "올리버 맥버니",
+    "Value": 11
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "브라이언 딘",
+    "Value": 10
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "글린 호지스",
+    "Value": 10
+  },
+  {
+    "Team": "셰필드",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "데인 화이트하우스",
+    "Value": 8
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Appearances",
+    "Position": 1,
+    "Player": "스티브 체틀",
+    "Value": 174
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Appearances",
+    "Position": 2,
+    "Player": "마크 크로슬리",
+    "Value": 162
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Appearances",
+    "Position": 3,
+    "Player": "이안 완",
+    "Value": 132
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Goals",
+    "Position": 1,
+    "Player": "브리얀 로이",
+    "Value": 24
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Goals",
+    "Position": 2,
+    "Player": "스탠 콜리모어",
+    "Value": 22
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Goals",
+    "Position": 3,
+    "Player": "스튜어트 피어스",
+    "Value": 18
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Assist",
+    "Position": 1,
+    "Player": "이안 완",
+    "Value": 27
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Assist",
+    "Position": 2,
+    "Player": "스티브 스톤",
+    "Value": 16
+  },
+  {
+    "Team": "노팅엄 포레스트",
+    "Category": "Assist",
+    "Position": 3,
+    "Player": "브리얀 로이",
+    "Value": 15
+  }
+]
