@@ -92,6 +92,6 @@
 
 | 초기화면 |
 |----------|
-
+![SPLASH (1)](https://github.com/yellowboxer1/La-Premiere/assets/123864276/d947fbb3-1180-4a20-aa54-92220b35a651)
 <br>
  
