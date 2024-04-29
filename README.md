@@ -89,9 +89,8 @@
 
 ### [초기화면]
 - 서비스 접속 초기화면으로 splash 화면이 잠시 나온 뒤 다음 페이지가 나타납니다.
-
 | 초기화면 |
 |----------|
-![SPLASH (1)](https://github.com/yellowboxer1/La-Premiere/assets/123864276/d947fbb3-1180-4a20-aa54-92220b35a651)
+![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/ca62a175-744a-48fd-b330-6ecfb6df2fe5)
 <br>
  
