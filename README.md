@@ -1,7 +1,5 @@
 # ⚽ 프리미어리그 승부 예측 서비스앱 La Premiere
 
-![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)
-
 - 배포 URL : https://yellowboxer1.netlify.app (준비중)
 - 배포 version : 1.00 (android)
 
@@ -91,6 +89,16 @@
 - 서비스 접속 초기화면으로 splash 화면이 잠시 나온 뒤 다음 페이지가 나타납니다.
 | 초기화면 |
 |----------|
-![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/ca62a175-744a-48fd-b330-6ecfb6df2fe5)
+|![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/ca62a175-744a-48fd-b330-6ecfb6df2fe5)|
+
 <br>
  
+### [온보딩 화면]
+- Onboarding 과정에서 선택한 사용자의 선호팀 정보를 세션에 저장하고, 해당 팀 정보를 등록합니다.
+- <구단검색> 기능을 통해 선호하는 팀을 편하게 선택할 수 있습니다. 
+
+| 온보딩 화면 |
+|----------|
+|![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)|
+
+<br>
