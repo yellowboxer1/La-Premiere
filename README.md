@@ -1,4 +1,4 @@
-# ⚽ 프리미어리그 승부 예측 서비스앱 La Premiere
+![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/1f528e12-de10-43d3-9ae4-4afd0b95d20b)# ⚽ 프리미어리그 승부 예측 서비스앱 La Premiere
 
 ![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)
 
@@ -92,6 +92,6 @@
 
 | 초기화면 |
 |----------|
-![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/f69dfdab-b176-4577-8a45-c55e33ae0d8a){: width="50%", height="50%"}
+![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/af10767b-6fca-46bc-a846-f98aa74e7c78){: width="20%" height="20%"}
 <br>
  
