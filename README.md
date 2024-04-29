@@ -92,6 +92,6 @@
 
 | 초기화면 |
 |----------|
-![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/af10767b-6fca-46bc-a846-f98aa74e7c78.gif){: width="20%" height="20%"}
+|![SPLASH](https://github.com/yellowboxer1/La-Premiere/assets/123864276/af10767b-6fca-46bc-a846-f98aa74e7c78.gif){: width="20%" height="20%"}|
 <br>
  
