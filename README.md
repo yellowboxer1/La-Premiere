@@ -3,7 +3,7 @@
 ![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)
 
 - 배포 URL : https://yellowboxer1.netlify.app (준비중)
-- 배포 version : 1.00
+- 배포 version : 1.00 (android)
 
 <br>
 
@@ -20,6 +20,7 @@
 - Front : React, styled-components
 - Back-end : Python Fast API, express
 - 버전 및 이슈관리 : Github
+- 클라우드 서버 : Naver cloud platform, Cloudtype
 - 서비스 배포 환경 : Netlify
 - 디자인 : [Figma](https://www.figma.com/file/fAisC2pEKzxTOzet9CfqML/README(oh-my-code)?node-id=39%3A1814)
 <br>
