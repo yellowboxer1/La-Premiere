@@ -1,5 +1,7 @@
 # ⚽ 프리미어리그 승부 예측 서비스앱 La Premiere
 
+![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)
+
 - 배포 URL : https://yellowboxer1.netlify.app (준비중)
 - 배포 version : 1.00 (android)
 
@@ -99,6 +101,6 @@
 
 | 온보딩 화면 |
 |----------|
-|![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)|
+|![onboarding1](https://github.com/yellowboxer1/La-Premiere/assets/123864276/c9df78d4-ee61-4444-90c9-0ebaffe991e7)|
 
 <br>
