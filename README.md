@@ -2,7 +2,6 @@
 
 ![image](https://github.com/yellowboxer1/La-Premiere/assets/123864276/825e1d09-87a3-400a-8ebb-35a6b36e0b74)
 
-- 배포 URL : https://yellowboxer1.netlify.app (준비중)
 - 배포 version : 1.00 (android)
 
 <br>
