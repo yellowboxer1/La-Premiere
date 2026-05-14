@@ -20,7 +20,6 @@
 - Back-end : Python Fast API, express
 - 버전 및 이슈관리 : Github
 - 클라우드 서버 : Naver cloud platform, Cloudtype
-- 서비스 배포 환경 : Netlify
 - 디자인 : [Figma](https://www.figma.com/file/fAisC2pEKzxTOzet9CfqML/README(oh-my-code)?node-id=39%3A1814)
 <br>
 
